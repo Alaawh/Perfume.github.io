@@ -1,0 +1,33 @@
+@mixin maxMobile {
+    @media (max-width: 767px){
+        @content;
+    }
+}
+
+/* Prefixes */
+@mixin Prefixer($proparety, $value, $prefixes:()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $proparety}: $value
+    }
+    
+    #{$proparety} : $value
+}
+
+/* Animation */
+@mixin Animation($animationName){
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    
+    @keyframes #{$animationName} {
+        @content;
+    }
+}

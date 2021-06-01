@@ -1,0 +1,138 @@
+/* contact */
+#About{
+	height: auto;
+	background:  $goldColor;
+	padding-top: 5%;
+	padding-bottom: 2%;
+    position: relative;
+	border-top: 1px solid rgba($secColor, .2);
+	h1,h6{
+		color: $secColor;
+		font-weight: bold;
+		text-align: left;
+	}
+	h6{
+		font-size: 20px;
+	}
+	p{
+		font-family: $text;
+		color: #666;
+		font-size: 20px;
+	}
+	ul{
+		li{
+			font-size: 18px;
+			font-family: $text;
+			color: #666;
+			a{
+				color: #666
+			}
+			
+		}
+	}
+	.coby{
+		font-size: 15px;
+		font-family: $text;
+		padding-top: 2%;
+		color: #666
+	}
+}
+
+
+/* copy */
+.made{
+	background: #000;
+	color: #fff;
+	height: 50px;
+	padding-top: 1%;
+	font-family: $text
+}
+
+/* social-icon */
+.social-icon{
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	a{
+		position: relative;
+		background: #fff;
+		margin: 15px;
+		width: 45px;
+		height: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		//border: 2px solid $secColor;
+		box-shadow: inset -1px -1px 2px rgba(0,0,0,.2),
+							2px 2px 5px rgba(0,0,0,.2);
+		transition: all .5s ease-in-out;
+		svg{
+			font-size: 25px;
+			margin: 15px;
+			color: $secColor;
+			border-radius: 50%;
+			transition: all .5s ease-in-out;
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			top: 3px;
+			left: 3px;
+			right: 3px;
+			bottom: 3px;
+			border-radius: 50%;
+			border: 2px solid $secColor;
+			transition: all .5s ease-in-out;
+		}
+
+		&:hover:nth-child(1){
+			svg{
+				color: #1877f2;
+			}
+			&::before{
+				border: 2px solid #1877f2;
+			}
+		}
+
+		&:hover:nth-child(2){
+			svg{
+				color: $secColor
+			}
+			&::before{
+				border: 2px solid $secColor;
+			}
+		}
+
+		&:hover:nth-child(3){
+			svg{
+				color: #2066c2;
+			}
+			&::before{
+				border: 2px solid #2066c2;
+			}
+		}
+
+		&:hover:nth-child(4){
+			svg{
+				color: #1da1f2;
+			}
+			&::before{
+				border: 2px solid #1da1f2;
+			}
+		}
+
+
+
+
+
+
+
+
+
+	}
+}

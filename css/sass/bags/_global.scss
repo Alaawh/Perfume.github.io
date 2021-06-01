@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+	@include Prefixer(box-sizing, border-box, webkit moz o);
+    //font-family: 'Viner Hand ITC';
+    background: #f3efeb;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none
+}
+
+.color{
+    position: absolute;
+    &.col1{
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient($secColor, $goldColor);
+            clip-path: circle(30% at right 80%);
+        }
+        &.col2{
+            top: -6px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient($goldColor, $secColor);
+            clip-path: circle(20% at 10% 10%);
+            @media (max-width: 1000px){
+                width: 0%;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .color{
+//     position: absolute;
+//     filter: blur(150px);
+//     &.col1{
+//             top: 0px;
+//             width: 500px;
+//             height: 50%;
+//             background: $secColor;
+//         }
+//         &.col2{
+//             bottom: 150px;
+//             right: 0;
+//             width: 300px;
+//             height: 30%;
+//             background: #7be1f8;
+//         }
+//         &.col3{
+//             bottom: 10px;
+//             left: 200px;
+//             width: 500px;
+//             height: 30%;
+//             background: #fcf802;
+//         }
+//     }

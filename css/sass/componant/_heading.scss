@@ -1,0 +1,83 @@
+h1{
+    //font-family: 'Viner Hand ITC';
+    margin-bottom: 3%;
+    text-align: center;
+    color: $secColor;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+h1::first-letter{
+    font-size: 50px;
+    color: #a81e30;
+}
+
+.discount{
+    h1{
+        font-size: 70px;
+        font-weight: 500;
+        color: #fff;
+        text-align: left;
+        &::first-letter{
+            font-size: 70px;
+            font-weight: 500;
+            color: #fff;
+        }
+        span{
+        color: $secColor;
+        font-size: 80px;
+        }
+    }
+}
+
+#home{
+    h2{
+        font-size: 100px;
+        letter-spacing: 15px;
+        margin-bottom: 0;
+        color: $goldColor;
+        font-family: 'Viner Hand ITC';
+        &::first-letter{
+            color:  $secColor;
+            font-size: 150px
+       }
+       @media (max-width: 767px){
+           font-size: 30px;
+           &::first-letter{
+            font-size: 50px
+        }
+       }
+    }
+}
+
+.prodacts-section {
+    h2{
+        padding: 3%;
+        font-size: 20px;
+        color: $secColor;
+    }
+}
+.pest-Prodacts{
+    h3{
+        padding-top: 15px;
+        color: $secColor;
+    }
+}
+
+.others{
+    .contactbox{
+        h5{
+            color: $secColor;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            margin: 20px 0 10px;
+            line-height: 1.1em;
+            span{
+                font-size: 12px;
+                font-weight: 300;
+                text-transform: initial;
+            }
+        }
+    }
+}
